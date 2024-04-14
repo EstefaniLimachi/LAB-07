@@ -7,12 +7,13 @@ export const Button = props => {
     function handlerButton() {
         const randomNumber = Math.floor(Math.random() * 100) + 1;
         alert(`Número aleatorio: ${randomNumber}`);
-        setCount(count + 5);
+        // No necesitas incrementar count en 5, simplemente puedes actualizarlo a 0
+        setCount(0);
     }
 
     return (
         <button onClick={handlerButton}>
-            {text} {count}
+            {text}
         </button>
     );
 };
